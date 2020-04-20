@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ex1._3
 {
+    /*
+     * Write a console application that prints your first and last name on the console.
+     * 
+     */
     class Program
     {
         static void Main(string[] args)

@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Ex1._8
 {
     /* 
-     * Objective:
      * Declare two variables of type int. Assign to them values 5 and 10 respectively. Exchange(swap) their values and print them. 
+     * 
      */ 
     class Program
     {

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ex1._4
 {
+    /*
+     * Write a program that prints the square root of 12345.
+     * 
+     */
     class Program
     {
         static void Main(string[] args)

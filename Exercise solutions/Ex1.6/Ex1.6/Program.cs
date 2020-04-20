@@ -8,6 +8,10 @@ namespace Ex1._6
 {
     class Program
     {
+        /*
+         * Write a program that reads your age from the console and prints your age after 10 years.
+         * 
+         */
         static void Main(string[] args)
         {
             Console.Write("State your current age: ");

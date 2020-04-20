@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Ex1._9
 {
     /* 
-     * Objective:
      * Write an expression that checks whether an integer is odd or even.
+     * 
      */
 
     class Program
