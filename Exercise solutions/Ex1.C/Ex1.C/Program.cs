@@ -16,7 +16,7 @@ namespace Ex1.C
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the radius of a circle:");
-            int r = int.Parse(Console.ReadLine());
+            double r = double.Parse(Console.ReadLine());
 
             Console.WriteLine($"The area and perimeter of a circle with radius {r} is:\n\tArea:     {Math.Round(Math.PI * r * r,2)}\n\tPerimter: {Math.Round(Math.PI * 2 * r,2)} ");
             Console.ReadLine();

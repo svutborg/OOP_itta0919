@@ -18,6 +18,7 @@ namespace Ex1._6
             string line = Console.ReadLine();
             
             int futureAge = int.Parse(line) + 10;
+            //int futureAge = Convert.ToInt32(line) + 10;
             Console.WriteLine($"In that case you will be {futureAge} years old in 10 years.");
 
             Console.Read();

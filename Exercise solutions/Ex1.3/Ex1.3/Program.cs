@@ -16,7 +16,7 @@ namespace Ex1._3
         {
             Console.WriteLine("Steffen Vutborg"); //Printing my name
 
-            Console.Read();
+            
         }
     }
 }

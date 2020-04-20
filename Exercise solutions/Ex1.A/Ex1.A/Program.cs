@@ -17,9 +17,9 @@ namespace Ex1.A
         {
             Console.WriteLine("Calculating the area and perimeter of a rectangle, given side and height measurement:");
             Console.Write("Side: ");
-            int side = int.Parse(Console.ReadLine());
+            double side = double.Parse(Console.ReadLine());
             Console.Write("Height: ");
-            int height = int.Parse(Console.ReadLine());
+            double height = double.Parse(Console.ReadLine());
 
             Console.WriteLine($"Area: {side * height}; Perimeter {2 * side + 2 * height}");
             Console.Read();

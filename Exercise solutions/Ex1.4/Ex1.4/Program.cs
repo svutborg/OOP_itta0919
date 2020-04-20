@@ -15,6 +15,7 @@ namespace Ex1._4
         static void Main(string[] args)
         {
             Console.WriteLine($"The squareroot of 12345 is {Math.Round(Math.Sqrt(12345),2)}"); // printing squareroot of 12345 rounded to two decimals
+            //Console.WriteLine("The squareroot of 12345 is {0}", Math.Round(Math.Sqrt(12345), 2)); // printing squareroot of 12345 rounded to two decimals
 
             Console.Read();
         }
