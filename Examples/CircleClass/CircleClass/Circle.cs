@@ -27,6 +27,7 @@ namespace CircleClass
     }
     class Circle
     {
+        static int circleCounter = 0;
         double radius;
         Point center;
         double area;
@@ -36,14 +37,23 @@ namespace CircleClass
         {
             Radius = radius;
             Center = center;
+            circleCounter++;
         }
 
         public Circle(double radius, double centerX, double centerY)
         {
             Radius = radius;
             Center = new Point(centerX, centerY);
+            circleCounter++;
         }
 
+        ~Circle()
+        {
+            circleCounter--;
+            Console.WriteLine("removing circle");
+        }
+
+        public static int CircleCounter { get => circleCounter; protected set => circleCounter = value; }
         public double Area { get => area; private set => area = value; }
         public double Perimeter { get => perimeter; private set => perimeter = value; }
         public double Radius
@@ -65,6 +75,19 @@ namespace CircleClass
         }
 
         public Point Center { get => center; set => center = value; }
+
+        static public Boolean Compare(Circle C1, Circle C2)
+        {
+            Boolean result = false;
+            if (C1.radius == C2.Radius)
+            {
+                if (C1.Center.X == C2.Center.X && C1.Center.Y == C2.Center.Y)
+                {
+                    result = true;
+                }
+            }
+            return result;
+        }
 
         public override string ToString()
         {
