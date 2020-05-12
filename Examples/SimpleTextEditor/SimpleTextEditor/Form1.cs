@@ -37,6 +37,8 @@ namespace SimpleTextEditor
         {
             InitializeComponent();
             CurrentFile = null;
+            toolStripComboBox1.Items.AddRange(new object[] { 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 });
+            toolStripComboBox1.SelectedItem = 12;
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -155,6 +157,11 @@ namespace SimpleTextEditor
             {
                 richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont, FontStyle.Underline);
             }
+        }
+
+        private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, (int) toolStripComboBox1.SelectedItem);
         }
     }
 }
